@@ -162,7 +162,7 @@ input[type="date"], input[type="text"] {
 }
 
 .btn-primary {
-    background: linear-gradient(to right, #ffffff, #64cdfa);
+    background: linear-gradient(to right, #1a6ec244, #6d9ac287);
     color: #ffffff;
     border: none;
     padding: 15px 30px;
@@ -177,7 +177,7 @@ input[type="date"], input[type="text"] {
 }
 
 .btn-primary:hover {
-    background: linear-gradient(to right, #64cdfa, #0e2649);
+    background: linear-gradient(to right, #6d9ac287 , #0e2649);
     transform: scale(1.05);
 }
 
