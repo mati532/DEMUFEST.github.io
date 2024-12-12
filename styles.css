@@ -221,21 +221,23 @@ footer {
     }
 
     .logo {
-        width: 150px;
-        left: -40px;
+        width: 250px;
+        margin-left: 130px;
         top: -10px;
         margin-bottom: 20px;
     }
 
     h1 {
-        font-size: 2em;
-        margin-left: 0;
+        font-size: 3em;
+        margin-left: 70px;
+        margin-top: 100px;
+        letter-spacing: 10px;
     }
 
     nav {
         flex-direction: column;
         gap: 10px;
-        margin-top: 100px;
+        margin-top: 90px;
         margin-left: 130px;
     }
 
