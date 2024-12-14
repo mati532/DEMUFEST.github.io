@@ -98,7 +98,7 @@ main {
 }
 
 h2 {                                                        /* subtitulo ( Detalls del esdeveniment) */
-    color: #6d9ac287;
+    color: #6dadc2;
     font-size: 1.9em;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -109,7 +109,7 @@ h2 {                                                        /* subtitulo ( Detal
 .event-details {
     font-size: 1.2em;
     line-height: 1.8;
-    background-color: #6d9ac277;
+    background-color: #6dadc2;
     padding: 20px;
     border-radius: 10px;
 }
@@ -121,7 +121,7 @@ h2 {                                                        /* subtitulo ( Detal
 }
 
 .ticket-item {
-    background-color: #1e3a5f;
+    background-color:#6dadc2;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -133,7 +133,7 @@ h2 {                                                        /* subtitulo ( Detal
 }
 
 .ticket-item h3 {
-    color: #6d9ac287;
+    color: #6dadc2;
     margin-top: 0;
 }
 
@@ -144,7 +144,7 @@ h2 {                                                        /* subtitulo ( Detal
 label {
     display: block;
     margin-bottom: 5px;
-    color: #6d9ac287;
+    color: #6dadc2;
 }
 
 input, select {
@@ -152,7 +152,7 @@ input, select {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #6d9ac287;
+    background-color: #6dadc2;
     color: #e1f5fe;
 }
 
@@ -161,7 +161,7 @@ input[type="date"], input[type="text"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #6d9ac287;
+    background-color: #6dadc2;
     color: #e1f5fe;
 }
 .payment-methods {
@@ -189,39 +189,59 @@ input[type="date"], input[type="text"] {
 }
 
 .btn-primary {
-    background: linear-gradient(to right, #1a6ec244, #6d9ac287);
+    background: linear-gradient(to right, #4b79a1, #283e51);
     color: #ffffff;
     border: none;
     padding: 15px 30px;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 1.3em;
-    transition: background 0.3s, transform 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    font-size: 1.5em;
+    transition: background 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     display: block;
     width: 100%;
     margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #6fc3f391, #cfdef3);
+    z-index: -1;
+    transition: transform 0.3s;
+}
+
+.btn-primary:hover::before {
+    transform: scaleX(1.2) scaleY(1.2);
 }
 
 .btn-primary:hover {
-    background: linear-gradient(to right, #6d9ac287 , #0e2649);
-    transform: scale(1.05);
+    background: none;
+    color: #283e51;
 }
 
 .btn-primary:active {
     transform: scale(0.95);
 }
 
+
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #6d9ac287;
+    background: #6dadc2;
     color: #ffffff;
 }
 .contact-details {      /* Contacto */
     font-size: 1.2em;
     line-height: 1.8;
-    background-color: #6d9ac277;
+    background-color: #6dadc2;
     padding: 5px;
     border-radius: 20px;
     text-align: center;
