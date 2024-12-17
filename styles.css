@@ -1,25 +1,12 @@
+/* styles.css */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #080808fc;
-    color: #e1f5fe;
-}
-
-header {
-    background-color: #080808;
-    color: #080808;
-    padding: 40px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-}
-
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .logo-container {
@@ -27,10 +14,17 @@ header {
     display: inline-block;
 }
 
+.logo {   /* logo */
+    width: 350px; /* Ajusta este valor según el tamaño del logo */
+    position: absolute;
+    left: 10px; /* Espacio entre el logo y el título */
+    margin-top: -390px;
+}
+
 .circle {
     position: absolute;
-    top: 19px;
-    left: 45px;
+    top: -290px;
+    left: 185px;
     transform: translate(-50%, -50%);
     width: 125px;
     height: 125px;
@@ -48,291 +42,143 @@ header {
     100% { background: purple; }
 }
 
-.logo {   /* logo */
-    width: 350px; /* Ajusta este valor según el tamaño del logo */
-    position: absolute;
-    left: -130px; /* Espacio entre el logo y el título */
-    margin-top: -80px;
-}
-
-h1 {                                                               /* titulo (DEMU FEST) */
-    margin: 0;
-    font-size: 5em;
-    text-transform: capitalize;
-    letter-spacing: 10px;
-    margin-left: 325px;
-    color: #6dadc2;
-    font-weight: bold;
-    text-shadow: 2px 4px 10px rgba(255, 255, 255, 0.842);
-}
-
-nav {
-    display: flex;
-    gap: 40px;
-    margin-right: -100px;
-}
-
-.nav-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: color 0.3s;
-}
-
-.nav-link:hover {
-    color: #64cdfa;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.section {
-    margin-bottom: 60px;
-    background: #0e0e0e54;
+.login-container {
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    border-style: inset;
+
 }
 
-h2 {                                                        /* subtitulo ( Detalls del esdeveniment) */
-    color: #6dadc2;
-    font-size: 1.9em;
+h2 {
+    font-family: fantasy;
     margin-bottom: 20px;
-    letter-spacing: 1px;
-    text-align: center;
-    text-shadow: 2px 3px 10px rgba(255, 255, 255, 0.281);
-}
-
-.event-details {
-    font-size: 1.2em;
-    line-height: 1.8;
-    background-color: #6dadc2;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.ticket-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.ticket-item {
-    background-color:#6dadc2;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.ticket-item:hover {
-    transform: translateY(-5px);
-}
-
-.ticket-item h3 {
-    color: #6dadc2;
-    margin-top: 0;
-}
-
-.form-group {
-    margin-bottom: 30px;                                  
+    font-size: 60px;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #6dadc2;
 }
 
-input, select {
+input {
+    font-family: fantasy;
     width: 100%;
-    padding: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button-85 {
+    font-size: 20px;
+    padding: 0.6em 2em;
     border: none;
-    border-radius: 5px;
-    background-color: #6dadc2;
-    color: #e1f5fe;
-}
-
-input[type="date"], input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #6dadc2;
-    color: #e1f5fe;
-}
-.payment-methods {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.payment-logo {
-    width: 80px; /* Ajusta el tamaño según sea necesario */
-    height: auto;
-    margin: 0 10px;
-    transition: transform 0.3s ease-in-out;
-    background-color: transparent; /* Asegura que el fondo sea transparente */
-}
-
-.payment-logo:hover {
-    transform: scale(1.1);
-}
-.total {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.btn-primary {
-    background: linear-gradient(to right, #4b79a1, #283e51);
-    color: #ffffff;
-    border: none;
-    padding: 15px 30px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
     cursor: pointer;
-    border-radius: 10px;
-    font-size: 1.5em;
-    transition: background 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    display: block;
-    width: 100%;
-    margin-top: 20px;
     position: relative;
-    overflow: hidden;
-    z-index: 1;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 20px auto;      /* Aplica margen automático */
+    display: block;         /* Se asegura de que el botón sea un bloque */
 }
 
-.btn-primary::before {
-    content: '';
+.button-85:before {
+    content: "";
+    background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+    );
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+    background-position: 0 0;
+    }
+    50% {
+    background-position: 400% 0;
+    }
+    100% {
+    background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #6fc3f391, #cfdef3);
-    z-index: -1;
-    transition: transform 0.3s;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
 }
 
-.btn-primary:hover::before {
-    transform: scaleX(1.2) scaleY(1.2);
-}
-
-.btn-primary:hover {
-    background: none;
-    color: #283e51;
-}
-
-.btn-primary:active {
-    transform: scale(0.95);
-}
-
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #6dadc2;
-    color: #ffffff;
-}
-.contact-details {      /* Contacto */
-    font-size: 1.2em;
-    line-height: 1.8;
-    background-color: #6dadc2;
-    padding: 5px;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.contact-details a {
-    color: #64cdfa;
-    text-decoration: none;
-}
-
-.contact-details a:hover {
-    text-decoration: underline;
-}
-/* Ejemplo de consulta de medios para dispositivos móviles */
-@media (max-width: 600px) {
+/* Responsive design for mobile devices */
+@media only screen and (max-width: 600px) {
     body {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .header-content {
         flex-direction: column;
-        align-items: center;
+        height: auto;
+        padding: 20px;
     }
 
     .logo {
-        width: 350px;
-        margin-left: -50px;
-        top: 10px;
+        width: 350px; /* Adjust logo size for smaller screens */
+        margin-top: -15px;  
+        margin-left: -165px;
     }
-    .logo-container {
-        position: relative;
-        display: inline-block;
-    }
-    
+
     .circle {
-        position: absolute;
-        top: 29px;
-        left: -05px;
-        transform: translate(-50%, -50%);
-        width: 125px;
-        height: 125px;
-        border-radius: 50%;
-        z-index: 0;
-        animation: color-change 5s infinite;
-    }
-    
-    @keyframes color-change {
-        0% { background: red; }
-        20% { background: orange; }
-        40% { background: yellow; }
-        60% { background: lime; }
-        80% { background: blue; }
-        100% { background: purple; }
+        top: 83px;
+        left: 20px;
+        width: 130px;
+        height: 130px;
     }
 
-
-    h1 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 2.4em;
-        margin-left: 15px;
-        margin-top: 130px;
-        letter-spacing: 8px;    
-    }
-
-    nav {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        flex-direction: row;
-        font-size: 16px;
-        gap: 25px;
-        margin-top: 80px;
-        margin-left: -120px;
-    }
-
-    .section {
+    .login-container {
+        width: 100%;
         padding: 10px;
+        margin-top: 170px;
+        margin-left: 7px;
     }
 
-    .form-group {
-        margin-bottom: 20px;
+    h2 {
+        font-size: 30px;
     }
 
-    .btn-primary {
-        font-size: 1em;
-        padding: 10px 20px;
+    input {
+        font-size: 16px;
+    }
+
+    .button-85 {
+        font-size: 16px;
+        padding: 0.5em 1.5em;
     }
 }
-/* Ejemplo de un diseño de cuadrícula flexible */
-.ticket-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
