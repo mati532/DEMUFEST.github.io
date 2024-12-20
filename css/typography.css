@@ -1,0 +1,29 @@
+/* Títulos y Texto */
+h1 {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    font-size: 5em;
+    text-transform: capitalize;
+    letter-spacing: 10px;
+    color: #6dadc2;
+    font-weight: bold;
+    text-shadow: 2px 4px 10px rgba(255, 255, 255, 0.842);
+}
+
+h2 {
+    color: #6dadc2;
+    font-size: 1.9em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 2px 3px 10px rgba(255, 255, 255, 0.281);
+}
+
+.event-details {
+    font-size: 1.2em;
+    line-height: 1.8;
+    background-color: #6dadc2;
+    padding: 20px;
+    border-radius: 10px;
+}

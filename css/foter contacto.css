@@ -1,0 +1,25 @@
+/*footer y contacto */
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #6dadc2;
+    color: #ffffff;
+}
+.contact-details {      /* Contacto */
+    font-size: 1.2em;
+    line-height: 1.8;
+    background-color: #6dadc2;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contact-details a {
+    color: #64cdfa;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}

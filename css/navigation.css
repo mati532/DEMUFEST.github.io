@@ -1,0 +1,17 @@
+/* Navegación */
+nav {
+    display: flex;
+    gap: 40px;
+    margin-right: -100px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #64cdfa;
+}
