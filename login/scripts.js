@@ -8,7 +8,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     if (username === 'admin' && password === 'admin') {
         alert('contraseña correcta');
         // Redirige al panel de administración
-        window.location.href = '/admin/index.html'; // Asegúrate de que esta URL sea correcta
+        window.location.href = 'admin/index.html'; // Asegúrate de que esta URL sea correcta
     } else {
         alert('Nombre de usuario o contraseña incorrectos');
     }
