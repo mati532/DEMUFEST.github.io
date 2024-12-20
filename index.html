@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEMU FEST OFICIAL</title>    <!-- pestaña -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/metodos de pago.css">
+    <link rel="stylesheet" href="css/botones principales.css">
+    <link rel="stylesheet" href="css/foter contacto.css">
+    <link rel="stylesheet" href="css/movil.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script> <!-- SDK de PayPal -->
     <script src="https://js.stripe.com/v3/"></script> <!-- SDK de Stripe -->
 </head>
 <body>
     <header>
+        <button class="button-8" onclick="window.location.href='login/login.html';">Login</button>
         <div class="header-content">
             <div class="logo-container">
                 <div class="circle"></div>
-                <img src="logo.png" alt="Logo DEMU FEST" class="logo">
-            </div>>
+                <img src="images/logo.png" alt="Logo DEMU FEST" class="logo">
+            </div>
             <h1>DEMU FEST</h1>
             <nav>
                 <a href="#info" class="nav-link">Informació</a>
@@ -77,20 +88,21 @@
                     <div class="payment-methods">
                         <label>
                             <input type="radio" name="payment_method" value="paypal" required>
-                            <img src="logos/paypal-logo.png" alt="PayPal" class="payment-logo">
+                            <img src="images/paypal-logo.png" alt="PayPal" class="payment-logo">
                         </label>
                         <label>
                             <input type="radio" name="payment_method" value="credit_card" required>
-                            <img src="logos/credit-card-logo.png" alt="Tarjeta de crédito" class="payment-logo">
+                            <img src="images/credit-card-logo.png" alt="Tarjeta de crédito" class="payment-logo">
                         </label>
                         <label>
                             <input type="radio" name="payment_method" value="bizum" required>
-                            <img src="logos/bizum-logo.png" alt="Bizum o en carne" class="payment-logo">
+                            <img src="images/bizum-logo.png" alt="Bizum o en carne" class="payment-logo">
                         </label>
                     </div>
                 </div>
                 <p class="total">Total: €<span id="total-amount">0.00</span></p>
-                <button type="submit" class="btn-primary">Comprar entrades</button>
+                <button class="button-85" role="button">Button 85</button>
+                <!--button type="submit" class="btn-primary">Comprar entrades</button--> 
             </form>
             <div id="paypal-button-container" style="display: none;"></div>
             <div id="stripe-card-element" style="display: none;"></div>
@@ -99,7 +111,7 @@
         <section id="contacto" class="section contacto">
             <h2>Contacto</h2>
             <div class="contact-details">
-                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/tu_usuario" target="_blank">@tu_usuario</a></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/demufest/" target="_blank">@demufest</a></p>
                 <p><strong>Teléfono:</strong> +34 123 456 789</p>
             </div>
         </section>        
